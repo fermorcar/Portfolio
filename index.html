@@ -1,0 +1,40 @@
+<!-- Se definen las diferentes partes de la página: cabecera, body, container... -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+    <title> PRA2 VACUNACIÓN COVID-19 - PÁGINA PRINCIPAL</title>
+</head>
+
+<body>
+    <center>
+
+        <div class="header">
+            <h1>GESTIÓN DE VACUNAS POR PACIENTE</h1>
+            <h2> Seleciona tu opción: </h2> <br>
+        </div>
+
+        <div class="container">
+
+            <!-- Se crea el formulario con los botones radios para seleccionar la opción deseada -->
+            <form action="opcionusuario.php" method="POST">
+
+                <label class="radio">
+                    <br>
+                    <input type="radio" class="boton" checked="true" name="opcion" value="nuevopaciente" />Añadir nuevo
+                    paciente<br><br>
+                    <input type="radio" class="boton" name="opcion" value="aplicarDosis" />Aplicar nueva dosis<br><br>
+                    <input type="radio" class="boton" name="opcion" value="plantilla" />Plantilla de vacunación<br>
+                </label>
+
+                <br><br>
+                <!-- Se envía el formulario -->
+                <input type="submit" value="Selecciona la opción" class="boton" />
+
+            </form>
+        </div>
+        </div>
+</body>
+
+</html>
